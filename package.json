@@ -1,0 +1,33 @@
+{
+  "name": "dio-formacao-cypress",
+  "version": "1.3.0",
+  "description": "Este repositório foi criado para os cursos de 'Primeiros Passos com Cypress', 'Testes Automatizados de API com Cypress' e 'Testes Automatizados Web com Cypress' da DIO.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open",
+
+    "cy:basico": "npx cypress run -C cypress.config.js --spec cypress\\e2e\\basico",
+    "cy:api": "npx cypress run -C cypress-api.config.js --spec cypress\\e2e\\api",
+    "cy:web": "npx cypress run -C cypress-web.config.js --spec cypress\\e2e\\web",
+
+    "cy:api-auth": "npx cypress run -C cypress-api.config.js --spec cypress\\e2e\\api\\Auth",
+    "cy:api-booking": "npx cypress run -C cypress-api.config.js --spec cypress\\e2e\\api\\Booking",
+
+    "cy:web:editor": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web\\editor",
+    "cy:web:register": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web\\register",
+    "cy:web:login": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web\\login",
+  
+    "open:e2e:prod": "npx cypress open --config-file cypress-web.config.js",
+    "web:e2e:prod": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web"
+  },
+  "author": "Bruno Dórea",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "cypress": "^13.6.4",
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "cypress-plugin-api": "^2.11.1",
+    "eslint-plugin-cypress": "^2.15.1"
+  }
+}
