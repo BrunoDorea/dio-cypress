@@ -7,19 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "npx cypress open",
 
-    "cy:basico": "npx cypress run -C cypress.config.js --spec cypress\\e2e\\basico",
-    "cy:api": "npx cypress run -C cypress-api.config.js --spec cypress\\e2e\\api",
-    "cy:web": "npx cypress run -C cypress-web.config.js --spec cypress\\e2e\\web",
-
-    "cy:api-auth": "npx cypress run -C cypress-api.config.js --spec cypress\\e2e\\api\\Auth",
-    "cy:api-booking": "npx cypress run -C cypress-api.config.js --spec cypress\\e2e\\api\\Booking",
-
+    "cy:basico": "npx cypress run --config-file cypress.config.js --spec cypress\\e2e\\basico",
+    
+    "cy:api": "npx cypress run --config-file cypress-api.config.js --spec cypress\\e2e\\api",
+    "cy:api-auth": "npx cypress run --config-file cypress-api.config.js --spec cypress\\e2e\\api\\Auth",
+    "cy:api-booking": "npx cypress run --config-file cypress-api.config.js --spec cypress\\e2e\\api\\Booking",
+    
+    "cy:web": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web",
     "cy:web:editor": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web\\editor",
     "cy:web:register": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web\\register",
-    "cy:web:login": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web\\login",
-  
-    "open:e2e:prod": "npx cypress open --config-file cypress-web.config.js",
-    "web:e2e:prod": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web"
+    "cy:web:login": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web\\login"
   },
   "author": "Bruno Dórea",
   "license": "ISC",
