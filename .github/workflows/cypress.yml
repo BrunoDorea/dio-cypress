@@ -25,7 +25,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          command: npm run cy:run 
+          command: npm run cy:basico 
           browser: chrome
           record: true
 
