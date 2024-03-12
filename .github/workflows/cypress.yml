@@ -13,11 +13,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
+      - name: Setup node.js
+        uses: actions/setup-node@v3.8.1
+        with:
+          node-version: 20
+      
+      - name: Install dependencies
+        run: npm ci
+
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          build: npm run build
-          start: npm start
+          command: npm run cy:basico 
+          browser: chrome
+          record: true
 
     
         env:
