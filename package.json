@@ -9,11 +9,11 @@
 
     "cy:basico": "npx cypress run --record --config-file cypress.config.js --spec cypress\\e2e\\basico",
 
-    "cy:api": "npx cypress run --config-file cypress-api.config.js --spec cypress\\e2e\\api",
+    "cy:api": "npx cypress run --record -C cypress.config.js --spec cypress\\e2e\\api",
     "cy:api-auth": "npx cypress run --config-file cypress-api.config.js --spec cypress\\e2e\\api\\Auth",
     "cy:api-booking": "npx cypress run --config-file cypress-api.config.js --spec cypress\\e2e\\api\\Booking",
 
-    "cy:web": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web",
+    "cy:web": "npx cypress run --record --config-file cypress-web.config.js --spec cypress\\e2e\\web",
     "cy:web:editor": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web\\editor",
     "cy:web:register": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web\\register",
     "cy:web:login": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web\\login"
