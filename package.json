@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "npx cypress open",
 
-    "cy:basico": "npx cypress run --config-file cypress.config.js --spec cypress\\e2e\\basico",
+    "cy:basico": "npx cypress run --record --config-file cypress.config.js --spec cypress\\e2e\\basico",
 
     "cy:api": "npx cypress run --config-file cypress-api.config.js --spec cypress\\e2e\\api",
     "cy:api-auth": "npx cypress run --config-file cypress-api.config.js --spec cypress\\e2e\\api\\Auth",
