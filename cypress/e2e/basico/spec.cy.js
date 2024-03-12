@@ -1,6 +1,6 @@
 /* eslint-disable cypress/unsafe-to-chain-command */
 /// <reference types='Cypress' />
-describe("Aprendendo conceitos Cypress", () => {
+describe.only("Aprendendo conceitos Cypress", () => {
     it("1 - Usuário faz login com user e senha inválidos", () => {
         cy.visit("/");
         cy.get("div.shop-menu").contains("Login").click();
