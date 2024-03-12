@@ -8,11 +8,11 @@
     "cy:open": "npx cypress open",
 
     "cy:basico": "npx cypress run --config-file cypress.config.js --spec cypress\\e2e\\basico",
-    
+
     "cy:api": "npx cypress run --config-file cypress-api.config.js --spec cypress\\e2e\\api",
     "cy:api-auth": "npx cypress run --config-file cypress-api.config.js --spec cypress\\e2e\\api\\Auth",
     "cy:api-booking": "npx cypress run --config-file cypress-api.config.js --spec cypress\\e2e\\api\\Booking",
-    
+
     "cy:web": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web",
     "cy:web:editor": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web\\editor",
     "cy:web:register": "npx cypress run --config-file cypress-web.config.js --spec cypress\\e2e\\web\\register",
@@ -25,6 +25,7 @@
     "cypress": "^13.6.4",
     "cypress-mochawesome-reporter": "^3.5.1",
     "cypress-plugin-api": "^2.11.1",
+    "cypress-split": "^1.21.0",
     "eslint-plugin-cypress": "^2.15.1"
   }
 }

@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: "dq4iim",
   env: {
     nameDefault: 'Bruno',
     emailDefault: 'bruno@email.com',
